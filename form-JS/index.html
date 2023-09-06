@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Avaliação</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Formulário de Avaliação</h1>
+    <form id="contact-form">
+        <label for="nome">Curso:</label>
+        <input type="text" id="curso" name="curso" required>
+        
+        <label for="email">Disciplina:</label>
+        <input type="email" id="disciplina" name="disciplina" required>
+
+        <label for="email">Professor:</label>
+        <input type="email" id="professor" name="professor" required>
+        
+        <label for="mensagem">Observação (Opcional):</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+        
+        <div class="avalia">
+            <ul class="avaliacao">
+                <li class="star-icon ativo" data-avaliacao="1"></li>
+                <li class="star-icon" data-avaliacao="2"></li>
+                <li class="star-icon" data-avaliacao="3"></li>
+                <li class="star-icon" data-avaliacao="4"></li>
+                <li class="star-icon" data-avaliacao="5"></li>
+              </ul>
+        </div>
+
+        <button class="button" type="submit">Enviar</button>
+    </form>
+    <br><br>
+    <footer>
+        <p>&copy; 2023 Carlos Moisés. Todos os direitos reservados.</p>
+    </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
